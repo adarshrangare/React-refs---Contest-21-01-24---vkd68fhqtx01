@@ -16,6 +16,10 @@ const App = () => {
     ) {
       setEmail(emailRef.current.value);
       setPassword(passwordRef.current.value);
+
+      emailRef.current.value = "";
+    passwordRef.current.value = "";
+      
     } else {
       setEmail("");
       setPassword("");
@@ -25,8 +29,7 @@ const App = () => {
         passwordRef.current.focus();
       }
     }
-     emailRef.current.value = "";
-    passwordRef.current.value = "";
+     
   };
 
   return (
