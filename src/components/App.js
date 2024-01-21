@@ -25,6 +25,8 @@ const App = () => {
         passwordRef.current.focus();
       }
     }
+     emailRef.current.value = "";
+    passwordRef.current.value = "";
   };
 
   return (
