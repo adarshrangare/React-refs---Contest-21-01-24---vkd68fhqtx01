@@ -38,9 +38,9 @@ const App = () => {
   return (
     <div id="main">
       Email
-      <input id="inputEmail" type="text" value={} ref={emailRef} onChange={}/><br/>
+      <input id="inputEmail" type="text"  ref={emailRef} /><br/>
       Password
-      <input id="inputPassword" type="text" value={password} ref={passwordRef} onChange={}/><br/>
+      <input id="inputPassword" type="text" ref={passwordRef} /><br/>
       <button id="submitButton" onClick={handleSubmit}>Submit</button><br/>
       <p id="emailText">Your Email : {email}</p>
       <p id ="passwordText">Your Password : {password}</p>
