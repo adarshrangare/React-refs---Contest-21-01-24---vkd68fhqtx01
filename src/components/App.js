@@ -12,10 +12,24 @@ const App = () => {
 
   const handleSubmit = ()=>{
 
-    if(email.trim().length != 0 && password.trim().length != 0 ){
+    if(emailRef.current.value.trim().length != 0 && passwordRef.current.value.trim().length != 0 ){
 
       setEmail(emailRef.current.value);    
       setPassword(passwordRef.current.value);    
+      
+    } else{
+
+      if(emailRef.current.value.trim().length == 0){
+
+        emailRef.current.focus();
+      } 
+      if(passwordRef.current.value.trim().length == 0){
+
+        passwordRef.current.focus();
+      } 
+
+      
+
       
     }
     
