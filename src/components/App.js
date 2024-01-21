@@ -18,7 +18,8 @@ const App = () => {
       setPassword(passwordRef.current.value);    
       
     } else{
-
+      setEmail('');
+      setPassword('');
       if(emailRef.current.value.trim().length == 0){
 
         emailRef.current.focus();
